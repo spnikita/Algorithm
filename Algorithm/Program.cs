@@ -6,37 +6,40 @@ namespace Algorithm
 {
     class Program
     {
-        static void Main(string[] args)
-        {
-			var users = new List<User>
+        /// <summary>
+		/// Список пользователей
+		/// </summary>
+		private static readonly List<User> _users = new List<User>
+		{
+			new User()
 			{
-				new User()
-                {
-					Login = "Ivan",
-					Name = "Иван",
-					IsPremium = true
-                },
-				new User()
-				{
-					Login = "Alexey",
-					Name = "Алексей",
-					IsPremium = false
-				},
-				new User()
-				{
-					Login = "Nikita",
-					Name = "Никита",
-					IsPremium = false
-				},
-				new User()
-				{
-					Login = "Oleg",
-					Name = "Олег",
-					IsPremium = true
-				}
-			};
+				Login = "Ivan",
+				Name = "Иван",
+				IsPremium = true
+			},
+			new User()
+			{
+				Login = "Alexey",
+				Name = "Алексей",
+				IsPremium = false
+			},
+			new User()
+			{
+				Login = "Nikita",
+				Name = "Никита",
+				IsPremium = false
+			},
+			new User()
+			{
+				Login = "Oleg",
+				Name = "Олег",
+				IsPremium = true
+			}
+		};
 
-			foreach (var user in users)
+		static void Main(string[] args)
+        {			
+			foreach (var user in _users)
             {
 				if (user.IsPremium)
                 {
