@@ -9,12 +9,12 @@
         /// Логин
         /// </summary>
         public string Login { get; set; }
-        
+
         /// <summary>
         /// Имя
         /// </summary>
         public string Name { get; set; }
-        
+
         /// <summary>
         /// Имеется премиум подписка, да/нет
         /// </summary>
